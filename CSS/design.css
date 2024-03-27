@@ -156,11 +156,11 @@ img {
 .animation.animate {
     width: 4%;
     height: auto;
-    margin: 0;
-    bottom: 100%;
-    left: 100%;
-    top: 0;
-    transition: width 1s, height 1s, top 1s, right 1s; 
+    background-size: cover;
+    position: absolute;
+    top: 4%;
+    left: 96%;
+    transition: width 2s, height 2s, top 2s, left 2s; 
     transform: translateX(), translateY(); 
 }
 .footerlink{
