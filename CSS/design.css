@@ -163,6 +163,14 @@ img {
     transition: width 1s, height 1s, top 1s, right 1s; 
     transform: translateX(), translateY(); 
 }
+.footerlink{
+    color:#fff;
+    text-decoration: none;
+}
+.footerlink:hover{
+    color: #89CFF0;
+    text-decoration: underline;
+}
 
 
 
