@@ -1,0 +1,203 @@
+#Home {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+li.nav-item a.nav-link {
+    font-size: 1.15rem;
+}
+
+li.nav-item a.nav-link:hover {
+    color: black;
+    animation-name: hovernavbar;
+    animation-duration: 300ms;
+
+}
+
+/*
+@media (min-width: 576px) {
+    .dropdown-menu {
+        display: block;
+        opacity: 0;
+        transition: all 0.6s;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+*/
+
+#firstdropdown {
+    animation: dropdown 300ms;
+    animation-delay: -150ms;
+}
+
+#seconddropdown {
+    animation: dropdown 300ms;
+    animation-delay: 0ms;
+}
+
+#thirddropdown {
+    animation: dropdown 300ms;
+    animation-delay: 150ms;
+}
+
+#fourthdropdown {
+    animation: dropdown 300ms;
+    animation-delay: 300ms;
+}
+
+#fifthdropdown {
+    animation: dropdown 300ms;
+    animation-delay: 450ms;
+}
+
+.dropdown-menu {
+    background-color: white;
+}
+
+.dropdown-item {
+    color: black;
+
+}
+
+body {
+    /*background-image: url('https://via.placeholder.com/1500');*/
+    /* Hintergrundbild des Zoos */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* Textfarbe auf weiß setzen */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Transparenter Hintergrund für den Inhalt */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#showpeople1 {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+#showpeople1.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#showpeople2 {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+#showpeople2.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#showpeople3 {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+#showpeople3.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#peopletext {
+    display: flex;
+    justify-content: space-around;
+}
+.animation {
+    width: 100%;
+    height: auto;
+    background-image: url("C:/Users/Andri/OneDrive - KBW Kantonsschule Büelrain Winterthur/Desktop/Desktop/Schule/BBW/IMS Praxis/Zoo-Website-1/Pictures/IntroPic.png"); /* Pfad zum Bild anpassen */
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animation.animate {
+    width: 4%;
+    height: auto;
+    top: 0;
+    right: 0;
+    transition: width 2s, height 2s, top 2s, right 2s; 
+    transform: translateX(), translateY(); 
+}
+
+
+
+@keyframes dropdown {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        background-color: transparent;
+    }
+
+    50% {
+        opacity: 1;
+        background-color: black;
+        color: white;
+    }
+
+    90% {
+        transform: scale(1.2);
+        background-color: gray;
+        color: black;
+
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        background-color: white;
+    }
+
+}
+
+@keyframes hovernavbar {
+    from {
+        color: gray;
+    }
+
+    to {
+        color: black;
+    }
+}

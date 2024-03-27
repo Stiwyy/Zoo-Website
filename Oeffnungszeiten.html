@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <!--<a class="navbar-brand" href="#">Navbar</a>!-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="HomePage.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Öffnungszeiten</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Kontakt.html">Kontakt</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="About.html">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="...." role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Tiere
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="Pfeilschwanzkrebs.html">Pfeilschwanzkrebs</a></li>
-                        <li><a class="dropdown-item" href="Axolotl.html">Axolotl</a></li>
-                        <li><a class="dropdown-item" href="Flughoernchen.html">Flughörnchen</a></li>
-                        <li><a class="dropdown-item" href="Tintenfisch.html">Tintenfisch</a></li>
-                        <li><a class="dropdown-item" href="#">Australopithecus afarensis</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Öffnungszeiten</title>
+    <link rel="shortcut icon" href="Pictures/Logo.ico"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
-    <div class="container">
-        <h1>Öffnungszeiten</h1>
-
-        <div class="opening-hours">
-            <h2>Montag - Freitag</h2>
-            <p>09:00 Uhr - 18:00 Uhr</p>
-
-            <h2>Samstag</h2>
-            <p>09:00 Uhr - 20:00 Uhr</p>
-
-            <h2>Sonntag</h2>
-            <p>Geschlossen</p>
-
-            <h2>Feiertage</h2>
-            <p>10:00 Uhr - 16:00 Uhr</p>
+    <link rel="stylesheet" href="CSS/design.css" />
+    <!----> 
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!--<a class="navbar-brand" href="#">Navbar</a>!-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="HomePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Öffnungszeiten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Kontakt.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="...." role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tiere
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" id="firstdropdown" href="Pfeilschwanzkrebs.html">Pfeilschwanzkrebs</a></li>
+                            <li><a class="dropdown-item" id="seconddropdown" href="Axolotl.html">Axolotl</a></li>
+                            <li><a class="dropdown-item" id="thirddropdown" href="Flughoernchen.html">Flughörnchen</a></li>
+                            <li><a class="dropdown-item" id="fourthdropdown" href="Tintenfisch.html">Tintenfisch</a></li>
+                            <li><a class="dropdown-item" id="fifthdropdown" href="#">Australopithecus afarensis</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
+        <header class="bg-dark text-white py-4">
+          <div class="container text-center">
+            <h1>Willkommen im Zoo</h1>
+            <p>Entdecken Sie die Vielfalt der Tierwelt!</p>
+          </div>
+        </header>
+        <div class="container">
+          <img src="Pictures/OEffnungszeiten.png" alt="Zoo Bild" height="400" width="800" class="img-fluid">
+          <h2 class="mt-5">Öffnungszeiten des Zoos</h2>
+          <table class="table table-striped mt-4">
+            <thead>
+              <tr>
+                <th>Tag</th>
+                <th>Öffnungszeit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Montag - Freitag</td>
+                <td>9:00 - 17:00 Uhr</td>
+              </tr>
+              <tr>
+                <td>Samstag - Sonntag</td>
+                <td>10:00 - 18:00 Uhr</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
 
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
