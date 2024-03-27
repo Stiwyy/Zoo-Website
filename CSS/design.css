@@ -145,7 +145,7 @@ img {
 .animation {
     width: 100%;
     height: auto;
-    background-image: url("C:/Users/Andri/OneDrive - KBW Kantonsschule Büelrain Winterthur/Desktop/Desktop/Schule/BBW/IMS Praxis/Zoo-Website-1/Pictures/IntroPic.png"); /* Pfad zum Bild anpassen */
+    background-image: url("Pictures/IntroPic.png"); /* Pfad zum Bild anpassen */
     background-size: cover;
     position: absolute;
     top: 50%;
