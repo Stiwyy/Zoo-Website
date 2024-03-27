@@ -172,6 +172,13 @@ img {
     text-decoration: underline;
 }
 
+.animalpic {
+    transition: all 0.2s;
+}
+.animalpic:hover{
+    transform: scale(1.1);
+}
+
 
 
 @keyframes dropdown {
